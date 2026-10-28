@@ -1,0 +1,13 @@
+[package]
+name = "sweepnova"
+version = "0.1.0"
+description = "Solana Anchor Program for Multi-Asset Savings & Bounded Sweep Mandates"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "sweepnova"
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
