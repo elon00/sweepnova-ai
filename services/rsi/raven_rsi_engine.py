@@ -1,7 +1,6 @@
-# Raven RSI Engine — Governed Recursive Self-Improvement Loop
-# Upstream: https://github.com/EverMind-AI/Raven.git
-import json
+"""Evidence-honest planning interface. Not an EverMind Raven integration."""
 import time
+
 
 class RavenRSIEngine:
     def __init__(self, repo_name: str):
@@ -13,12 +12,12 @@ class RavenRSIEngine:
         cycle = {
             "timestamp": time.time(),
             "observe": {"metric": observed_metric, "current": value, "target": target},
-            "diagnose": "Variance detected in benchmark telemetry",
-            "propose": "Constrained parameter tuning with bounded invariant guards",
-            "patch": "Applied virtual offset delta = 0",
-            "test": "PASSED (10,000 invariant fuzzing runs)",
-            "review": "Approved by automated Policy Engine",
-            "status": "STABLE"
+            "diagnose": "NOT_RUN: requires real telemetry and test execution",
+            "propose": "NOT_RUN",
+            "patch": "NOT_APPLIED",
+            "test": "NOT_RUN",
+            "review": "NOT_APPROVED",
+            "status": "BLOCKED",
         }
         self.history.append(cycle)
         return cycle
